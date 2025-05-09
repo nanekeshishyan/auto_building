@@ -59,7 +59,3 @@
     }
   ]
 }
-
-# Creates a file based on the dictionary
-with open('geojson_file_large', 'w') as f:
-    json.dump(geojson_dict_large, f)
