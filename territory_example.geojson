@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Зона застройки"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [37.6000, 55.7500],
+          [37.6160, 55.7500],
+          [37.6170, 55.7520],
+          [37.6175, 55.7570],
+          [37.6120, 55.7580],
+          [37.6050, 55.7570],
+          [37.6000, 55.7520],
+          [37.6000, 55.7500]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Водоем", "restriction": "no_build"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [37.6110, 55.7540],
+          [37.6130, 55.7540],
+          [37.6130, 55.7550],
+          [37.6110, 55.7550],
+          [37.6110, 55.7540]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Лесная зона", "restriction": "no_build"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [37.6050, 55.7525],
+          [37.6080, 55.7525],
+          [37.6080, 55.7540],
+          [37.6050, 55.7540],
+          [37.6050, 55.7525]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Дорога", "restriction": "no_build"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [37.6000, 55.7560],
+          [37.6170, 55.7560]
+        ]
+      }
+    }
+  ]
+}
+
+# Creates a file based on the dictionary
+with open('geojson_file_large', 'w') as f:
+    json.dump(geojson_dict_large, f)
